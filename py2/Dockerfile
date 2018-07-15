@@ -1,10 +1,6 @@
 FROM python:2-alpine
 MAINTAINER "Linedwell"
 
-#RUN apk add --no-cache \
-#    git \
-#    openssh-client
-
 RUN apk add --no-cache --virtual .build-deps \
     musl-dev \
     gcc \
