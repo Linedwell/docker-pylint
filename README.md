@@ -1,2 +1,35 @@
 # docker-pylint
-Containers for linting python files in CI
+Minimal docker images for linting Python files in CI based on Alpine Linux
+
+This container can be pulled with:
+```bash
+docker pull linedwell/pylint
+```
+
+
+# Tags
+| Tag Name | Dockerfile  | Compressed Size |
+|---|---|---|
+py2 | [py2](py2/Dockerfile) | Size: 33 MB
+py3 | [py3](py3/Dockerfile) | Size: 41 MB
+
+# Content
+This container is designed for running python lint checks on GitLab CI and similars. Current packages installed:
+* python 2.7.15 (for py2) or python 3.7.0 (for py3)
+* pylint
+* pylint-exit
+
+# Usage
+## Python Linting
+```bash
+docker run --rm -v $(pwd):/code -w "/code" linedwell/pylint:py2 \
+  pylint  --output-format=colorized --reports=y \
+  path/to/python/files
+```
+As pylint uses exit code to report analysis results (such as refactoring advices) you can first redirect your pylint exit to pylint-exit in order to have 0 as exit code if no fatal error has been found:
+
+```bash
+docker run --rm -v $(pwd):/code -w "/code" linedwell/pylint:py2 \
+  pylint  --output-format=colorized --reports=y \
+  path/to/python/files || pylint-exit $?
+```
