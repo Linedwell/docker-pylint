@@ -1,5 +1,5 @@
 # docker-pylint
-Minimal docker images for linting Python files in CI based on Alpine Linux
+Minimal docker images for linting Python files in CI based on Alpine Linux.
 
 This container can be pulled with:
 ```bash
@@ -12,7 +12,7 @@ docker pull linedwell/pylint
 | py3 | [py3/Dockerfile](//github.com/Linedwell/docker-pylint/blob/master/py2/Dockerfile) | Size: 41 MB |
 
 # Content
-This container is designed for running python lint checks on GitLab CI and similars. Current packages installed:
+This container is designed for running python lint checks on GitLab CI and similars. The following packages are installed:
 * python 2.7.15 (for py2) or python 3.7.0 (for py3)
 * pylint
 * pylint-exit
