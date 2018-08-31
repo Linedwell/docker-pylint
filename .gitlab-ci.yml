@@ -1,0 +1,10 @@
+---
+stages:
+  - check
+  
+hadolint:
+  stage: check
+  image: hadolint/hadolint
+  script: 
+    - hadolint py2/Dockerfile py3/Dockerfile
+...
