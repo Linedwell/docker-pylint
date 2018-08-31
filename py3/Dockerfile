@@ -1,5 +1,5 @@
 FROM python:3-alpine
-LABEL name=pylint version=py3 maintaine=Linedwell
+LABEL name=pylint version=py3 maintainer=Linedwell
 
 RUN apk add --no-cache --virtual .build-deps \
     musl-dev=1.1.19-r10 \
