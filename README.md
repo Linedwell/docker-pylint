@@ -11,7 +11,7 @@ docker pull linedwell/pylint
 | Tag Name | Dockerfile  | Compressed Size |
 |---|---|---|
 | py2 | [py2/Dockerfile](//github.com/Linedwell/docker-pylint/blob/master/py2/Dockerfile) | Size: 29 MB |
-| py3 | [py3/Dockerfile](//github.com/Linedwell/docker-pylint/blob/master/py2/Dockerfile) | Size: 36 MB |
+| py3 | [py3/Dockerfile](//github.com/Linedwell/docker-pylint/blob/master/py2/Dockerfile) | Size: 35 MB |
 
 # Content
 This container is designed for running python lint checks on GitLab CI and similars. The following packages are installed:
