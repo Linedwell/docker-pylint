@@ -5,7 +5,7 @@ RUN apk add --no-cache --virtual .build-deps \
     musl-dev=1.1.20-r4 \
     gcc=8.3.0-r0 \
     && pip install --no-cache-dir \
-    pylint==2.3.1 \
+    pylint==1.9.4 \
     pylint-exit==1.0.0 \
     && pip uninstall pip -y \
     && apk del .build-deps
