@@ -7,5 +7,6 @@ RUN apk add --no-cache --virtual .build-deps \
     && pip install --no-cache-dir \
     pylint==2.3.1 \
     pylint-exit==1.0.0 \
+    pylint-json2html==0.1.0 \
     && pip uninstall pip -y \
     && apk del .build-deps
