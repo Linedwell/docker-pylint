@@ -1,4 +1,4 @@
-[![Build Status](https://gitlab.com/linedwell/docker-pylint/badges/master/build.svg)](https://gitlab.com/linedwell/docker-pylint)
+[![Build Status](https://gitlab.com/linedwell/docker-pylint/badges/master/pipeline.svg)](https://gitlab.com/linedwell/docker-pylint)
 
 # docker-pylint
 Minimal docker images for linting Python files in CI based on Alpine Linux.
