@@ -15,7 +15,7 @@ docker pull linedwell/pylint
 
 # Content
 This container is designed for running python lint checks on GitLab CI and similars. The following packages are installed:
-* python 2.7.16 (for py2) or python 3.7.4 (for py3)
+* python 2.7.17 (for py2) or python 3.8.1 (for py3)
 * pylint
 * pylint-exit
 

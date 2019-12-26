@@ -1,4 +1,4 @@
-FROM python:3.7.4-alpine3.10
+FROM python:3.8.1-alpine3.10
 LABEL name=pylint version=py3 maintainer=Linedwell
 
 RUN apk add --no-cache --virtual .build-deps \
