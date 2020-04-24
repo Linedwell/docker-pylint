@@ -6,4 +6,5 @@ include:
 
 stages:
   - check
+  - build
 ...
