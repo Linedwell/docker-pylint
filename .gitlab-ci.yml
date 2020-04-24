@@ -1,10 +1,9 @@
 ---
+include:
+  - project: "gitlab-ci-templates/docker"
+    ref: "0.7.0"
+    file: "/templates/docker.yml"
+
 stages:
   - check
-  
-hadolint:
-  stage: check
-  image: hadolint/hadolint:latest-debian
-  script: 
-    - hadolint py2/Dockerfile py3/Dockerfile
 ...
