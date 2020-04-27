@@ -7,4 +7,5 @@ include:
 stages:
   - check
   - build
+  - test
 ...
